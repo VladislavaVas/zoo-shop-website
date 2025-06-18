@@ -1,0 +1,299 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0dcc6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+header {
+    background-color: #ceab6a;
+    color: rgb(92, 62, 7);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(92, 62, 7);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #995b03;
+}
+
+/* Слайдер */
+.slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 33.333%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://avatars.mds.yandex.net/i?id=aa04baa2c47f5ca5b2adf798614f7b98_l-5236381-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://avatars.mds.yandex.net/i?id=33241cb56888bdc12f59fccb1e0396b7_l-4342447-images-thumbs&ref=rim&n=13&w=640&h=426');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://www.zdravanimal.ru/netcat_files/userfiles/dog-being-blown-by-hairdryer-royalty-free-image-1607982657_.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.slide h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.slide p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ceab6a;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #8d6c2d;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+/* Информационные блоки */
+.info-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: rgb(92, 62, 7);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.info-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.info-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+.card-bg-1 {
+    background: url('https://roskod.ru/wp-content/uploads/2017/10/40bb6bbd0536-1024x494.jpg') center/cover no-repeat;
+}
+
+.card-bg-2 {
+    background: url('https://avatars.mds.yandex.net/get-altay/5236391/2a0000017b4e2f64230dafea514301bb917c/XXL_height') center/cover no-repeat;
+}
+
+.card-bg-3 {
+    background: url('https://pics.rbc.ru/v2_companies_s3/resized/960xH/media/company_press_release_image/9f59eb88-750a-4243-8fa2-e94ddb655a9d.jpg') center/cover no-repeat;
+}
+
+.card-bg-4 {
+    background: url('https://natalyland.ru/wp-content/uploads/6/b/0/6b0f51e11f11e408d9e45f15963cfbb6.jpeg') center/cover no-repeat;
+}
+
+.card-bg-5 {
+    background: url('https://santreyd.ru/upload/staff/upload/staff/vplate/all_photos/805a3398b3e25c354703264cf3e7e25f88bdd3fb.jpg') center/cover no-repeat;
+}
+
+.card-bg-6 {
+    background: url('https://avatars.mds.yandex.net/get-altay/1018126/2a0000016288a30d9adfec126b36dd1cafd9/XXL_height') center/cover no-repeat;
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.info-card p {
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    line-height: 1.6;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Подвал */
+footer {
+    background-color: #ceab6a;
+    color: rgb(92, 62, 7);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(92, 62, 7);
+}
