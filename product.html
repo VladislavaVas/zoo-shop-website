@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоомагазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/92/84/97/928497de10e57b1fa2571aa263f4c889.jpg" alt="Зоомагазин Logo" class="logo-img">
+                <span>Зоомагазин</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="product.html" class="active">Товары</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container product-page">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> > 
+            <a href="catalog.html">Каталог</a> > 
+            <a href="catalog.html?category=dogs">Для собак</a> > 
+            <span>Корм для собак "Премиум"</span>
+        </div>
+        
+        <div class="product-main">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://avatars.mds.yandex.net/get-yabs_performance/10253327/hat4f8dcfd75d15762c72c1f53e74fb901d/hugeXX" alt="Корм для собак Премиум" id="main-image">
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail active">
+                        <img src="https://avatars.mds.yandex.net/get-yabs_performance/10253327/hat4f8dcfd75d15762c72c1f53e74fb901d/hugeXX" alt="Корм для собак - упаковка">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://ir.ozone.ru/s3/multimedia-z/wc1000/6021847031.jpg" alt="Корм для собак - состав">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://ir.ozone.ru/s3/multimedia-4/wc1000/6766624660.jpg" alt="Корм для собак - гранулы">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://ir.ozone.ru/s3/multimedia-1-j/wc1000/7156250335.jpg" alt="Корм для собак - питание">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h1 class="product-title">Корм для собак "Премиум"</h1>
+                <div class="product-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-value">4.5</span>
+                    <span class="reviews-count">(42 отзыва)</span>
+                </div>
+                
+                <div class="product-price-block">
+                    <span class="current-price">1 200 ₽</span>
+                    <span class="old-price">1 500 ₽</span>
+                    <span class="discount">-20%</span>
+                </div>
+                
+                <div class="product-availability">
+                    <span class="in-stock">В наличии</span>
+                    <span class="stock-count">(15 шт.)</span>
+                </div>
+                
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" class="quantity-input">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-description">
+                    <h3>Описание</h3>
+                    <p>Полнорационный сухой корм "Премиум" для взрослых собак всех пород. Сбалансированный состав обеспечивает полноценное питание, поддерживает здоровье кожи и шерсти, укрепляет иммунитет. Корм содержит натуральное мясо, витамины и минералы.</p>
+                    <p>Рекомендуется для ежедневного кормления собак от 1 года. Подходит для собак с чувствительным пищеварением.</p>
+                </div>
+                
+                <div class="product-features">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li><strong>Вес упаковки:</strong> 3 кг</li>
+                        <li><strong>Возраст:</strong> Для взрослых собак (от 1 года)</li>
+                        <li><strong>Тип корма:</strong> Сухой</li>
+                        <li><strong>Основной ингредиент:</strong> Курица (26%)</li>
+                        <li><strong>Белки:</strong> 24%</li>
+                        <li><strong>Жиры:</strong> 14%</li>
+                        <li><strong>Углеводы:</strong> 45%</li>
+                        <li><strong>Производитель:</strong> Россия</li>
+                        <li><strong>Срок годности:</strong> 18 месяцев</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active">Описание</button>
+                <button class="tab-btn">Характеристики</button>
+                <button class="tab-btn">Отзывы (42)</button>
+            </div>
+            
+            <div class="tabs-content">
+                <div class="tab-pane active">
+                    <h3>Подробное описание</h3>
+                    <p>Корм "Премиум" для собак - это высококачественное питание, разработанное с учетом потребностей взрослых собак всех пород. Формула корма содержит оптимальное сочетание белков, жиров и углеводов для поддержания энергии и здоровья вашего питомца.</p>
+                    <p>Основные преимущества:</p>
+                    <ul>
+                        <li>Натуральное мясо курицы как основной источник белка</li>
+                        <li>Комплекс витаминов и минералов для поддержания иммунитета</li>
+                        <li>Омега-3 и Омега-6 жирные кислоты для здоровой кожи и блестящей шерсти</li>
+                        <li>Пребиотики для улучшения пищеварения</li>
+                        <li>Антиоксиданты для защиты клеток от старения</li>
+                    </ul>
+                    <p>Рекомендации по кормлению: суточная норма зависит от веса и активности собаки. Всегда обеспечивайте доступ к свежей воде.</p>
+                </div>
+                
+                <div class="tab-pane">
+                    <h3>Полные характеристики</h3>
+                    <table class="features-table">
+                        <tr>
+                            <th>Параметр</th>
+                            <th>Значение</th>
+                        </tr>
+                        <tr>
+                            <td>Бренд</td>
+                            <td>Премиум</td>
+                        </tr>
+                        <tr>
+                            <td>Страна производитель</td>
+                            <td>Россия</td>
+                        </tr>
+                        <tr>
+                            <td>Вес упаковки</td>
+                            <td>3 кг</td>
+                        </tr>
+                        <tr>
+                            <td>Возраст животного</td>
+                            <td>Для взрослых (от 1 года)</td>
+                        </tr>
+                        <tr>
+                            <td>Тип корма</td>
+                            <td>Сухой</td>
+                        </tr>
+                        <tr>
+                            <td>Основной ингредиент</td>
+                            <td>Курица (26%)</td>
+                        </tr>
+                        <tr>
+                            <td>Белки</td>
+                            <td>24%</td>
+                        </tr>
+                        <tr>
+                            <td>Жиры</td>
+                            <td>14%</td>
+                        </tr>
+                        <tr>
+                            <td>Клетчатка</td>
+                            <td>3%</td>
+                        </tr>
+                        <tr>
+                            <td>Зола</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>Влажность</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>Энергетическая ценность</td>
+                            <td>360 ккал/100 г</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="tab-pane">
+                    <h3>Отзывы о товаре</h3>
+                    
+                    <div class="review-form">
+                        <h4>Оставить отзыв</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="review-name">Ваше имя</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-rating">Оценка</label>
+                                <select id="review-rating" required>
+                                    <option value="5">Отлично</option>
+                                    <option value="4">Хорошо</option>
+                                    <option value="3">Удовлетворительно</option>
+                                    <option value="2">Плохо</option>
+                                    <option value="1">Ужасно</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Текст отзыва</label>
+                                <textarea id="review-text" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-review">Отправить отзыв</button>
+                        </form>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-author">Анна К.</span>
+                                <span class="review-date">15.05.2025</span>
+                                <span class="review-rating">★★★★★</span>
+                            </div>
+                            <div class="review-content">
+                                <p>Отличный корм! Мой лабрадор ест с удовольствием уже третий месяц. Шерсть стала блестящей, проблем с пищеварением нет. Рекомендую!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-author">Иван П.</span>
+                                <span class="review-date">02.05.2025</span>
+                                <span class="review-rating">★★★★☆</span>
+                            </div>
+                            <div class="review-content">
+                                <p>Хороший корм за свои деньги. Мой джек рассел очень привередливый, но этот корм ест нормально. Запах приятный, состав достойный. Минус одна звезда за то, что иногда бывают слишком крупные гранулы.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-author">Елена С.</span>
+                                <span class="review-date">22.04.2025</span>
+                                <span class="review-rating">★★★★★</span>
+                            </div>
+                            <div class="review-content">
+                                <p>Покупаю этот корм уже полгода для своей овчарки. Очень довольна! Собака активная, шерсть в отличном состоянии, стул регулярный. Цена соответствует качеству. До этого пробовали разные корма, но остановились на этом.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="show-more-reviews">Показать еще отзывы</button>
+                </div>
+            </div>
+        </div>
+        
+        <section class="related-products">
+            <h2 class="section-title">С этим товаром покупают</h2>
+            <div class="products-grid">
+                <div class="related-product">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/5236038/img_id6865106494732362467.jpeg/orig" alt="Миска для собак">
+                    <h3>Миска двойная "Комфорт"</h3>
+                    <span class="price">850 ₽</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                
+                <div class="related-product">
+                    <img src="https://cdn1.ozone.ru/s3/multimedia-z/6562501367.jpg" alt="Лакомства для собак">
+                    <h3>Лакомства "Дентал"</h3>
+                    <span class="price">350 ₽</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+                
+                <div class="related-product">
+                    <img src="https://cdn1.ozone.ru/s3/multimedia-5/6155247917.jpg" alt="Игрушка для собак">
+                    <h3>Игрушка "Канат"</h3>
+                    <span class="price">450 ₽</span>
+                    <button class="add-to-cart">В корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="https://i.pinimg.com/736x/92/84/97/928497de10e57b1fa2571aa263f4c889.jpg" alt="Зоомагазин" class="footer-logo-img">
+                <span>Зоомагазин</span>
+            </div>
+            <p class="copyright">© 2025 Зоомагазин. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
