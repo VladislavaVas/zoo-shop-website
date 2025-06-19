@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Зоомагазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://i.pinimg.com/736x/92/84/97/928497de10e57b1fa2571aa263f4c889.jpg" alt="Зоомагазин Logo" class="logo-img">
+                <span>Зоомагазин</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="product.html">Товары</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container contacts-page">
+        <h1 class="page-title">Наши контакты</h1>
+        
+        <div class="contacts-content">
+            <section class="contact-info">
+                <h2 class="section-title">Контактная информация</h2>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#8d6c2d">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Пушкина, д. 42</p>
+                        <p>ТЦ "Зоомир", 2 этаж</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#8d6c2d">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@zoomagazin.ru</p>
+                        <p>sales@zoomagazin.ru</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#8d6c2d">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                        </div>
+                        <h3>Телефоны</h3>
+                        <p>+7 (495) 123-45-67</p>
+                        <p>+7 (800) 123-45-67 (бесплатно)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#8d6c2d">
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/>
+                            </svg>
+                        </div>
+                        <h3>Часы работы</h3>
+                        <p>Пн-Пт: 9:00 - 21:00</p>
+                        <p>Сб-Вс: 10:00 - 20:00</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Мы в социальных сетях:</h3>
+                    <div class="social-icons">
+                        <a href="https://vk.com/petshopru" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg" alt="ВКонтакте">
+                        </a>
+                        <a href="https://t.me/petshopru" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-form-section">
+                <h2 class="section-title">Форма обратной связи</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон (необязательно)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Напишите ваш вопрос или предложение..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </section>
+        </div>
+        
+        <section class="location-section">
+            <h2 class="section-title">Как нас найти</h2>
+            <div class="map-container">
+                <img src="https://static-maps.yandex.ru/1.x/?lang=ru_RU&ll=37.620070,55.753630&size=650,400&z=15&l=map&pt=37.620070,55.753630,pm2dol" alt="Карта с местоположением зоомагазина" class="static-map">
+                <div class="map-overlay">
+                    <h3>Адрес магазина</h3>
+                    <p>г. Москва, ул. Пушкина, д. 42</p>
+                    <p>ТЦ "Зоомир", 2 этаж</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="https://i.pinimg.com/736x/92/84/97/928497de10e57b1fa2571aa263f4c889.jpg" alt="Зоомагазин" class="footer-logo-img">
+                <span>Зоомагазин</span>
+            </div>
+            <p class="copyright">© 2025 Зоомагазин. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
