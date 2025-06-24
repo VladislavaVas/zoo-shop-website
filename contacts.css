@@ -1,13 +1,14 @@
 /* Общие стили для страницы контактов */
 .contacts-page {
     padding: 40px 0 60px;
+    background-color: #f0dcc6;
 }
 
 .page-title {
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    color: rgb(92, 62, 7);
+    color: #5c3e07;
 }
 
 /* Основное содержимое */
@@ -16,77 +17,63 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-bottom: 50px;
+    align-items: stretch; 
 }
 
-@media (max-width: 768px) {
-    .contacts-content {
-        grid-template-columns: 1fr;
-    }
+/* Контактная информация */
+.contact-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%; 
+    box-sizing: border-box; 
 }
 
 .section-title {
     font-size: 24px;
-    margin-bottom: 25px;
-    color: rgb(92, 62, 7);
-    position: relative;
+    color: #5c3e07;
+    margin-bottom: 20px;
     padding-bottom: 10px;
+    border-bottom: 2px solid #ceab6a;
 }
 
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background-color: #ceab6a;
-}
-
-/* Контактная информация */
 .info-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-bottom: 30px;
 }
 
 .info-card {
-    background-color: rgba(255, 255, 255, 0.9);
+    background: #f9f5ed !important;
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(206, 171, 106, 0.3);
+    border-radius: 8px;
+    border-left: 4px solid #ceab6a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    color: #333 !important;
     position: relative;
     overflow: hidden;
+    margin: 10px; 
 }
 
 .info-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(206, 171, 106, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%);
-    z-index: 0;
+    content: none !important;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .info-icon {
     width: 50px;
     height: 50px;
-    margin-bottom: 20px;
+    margin: 15px 0 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(206, 171, 106, 0.1);
     border-radius: 50%;
-    position: relative;
 }
 
 .info-icon svg {
@@ -97,35 +84,22 @@
 
 .info-card h3 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin: 0 0 10px 15px;
     color: #5c3e07;
-    position: relative;
 }
 
 .info-card p {
     font-size: 15px;
-    color: #555;
+    color: #333;
     line-height: 1.6;
-    margin-bottom: 8px;
-    position: relative;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .info-card {
-        padding: 20px;
-    }
+    margin: 0 0 5px 15px; 
+    padding-left: 0;
 }
 
 /* Социальные сети */
 .social-links {
     margin-top: 30px;
-    padding: 0px;
-    border-radius: 12px;
+    padding: 0 15px; 
 }
 
 .social-links h3 {
@@ -143,31 +117,31 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: transform 0.3s;
 }
 
 .social-icon img {
-    width: 55px;
-    height: 55px;
+    width: 100%;
+    height: auto;
 }
 
 .social-icon:hover {
-    transform: translateY(-3px) scale(1.1);
+    transform: translateY(-3px);
 }
 
 /* Форма обратной связи */
-.contact-form {
-    background-color: white;
+.contact-form-section {
+    background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%; 
+    box-sizing: border-box; 
 }
 
-.form-group {
-    margin-bottom: 20px;
+.contact-form {
+    display: grid;
+    gap: 20px;
 }
 
 .form-group label {
@@ -194,16 +168,15 @@
 }
 
 .form-group textarea {
-    resize: vertical;
     min-height: 120px;
+    resize: vertical;
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 15px;
     background-color: #ceab6a;
     color: white;
     border: none;
+    padding: 15px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
@@ -221,16 +194,11 @@
 }
 
 .map-container {
-    position: relative;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.static-map {
-    width: 100%;
-    height: auto;
-    display: block;
+    position: relative;
+    height: 400px;
 }
 
 .map-overlay {
@@ -253,4 +221,19 @@
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .contacts-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
 }
